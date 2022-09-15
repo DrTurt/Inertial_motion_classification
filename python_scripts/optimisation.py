@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import math
+import time
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import get_scorer_names, accuracy_score, recall_score, precision_score, \
@@ -46,7 +47,7 @@ def set_up_for_support_vector_machine():
                       'tol': [0.01, 0.001, 0.0001],
                       'decision_function_shape': ["ovo", "ovr"]
                       }
-    print("break")
+    return svm, scorers, parameter_dict
 
 
 def set_up_for_multi_layer_perceptron():
@@ -54,28 +55,25 @@ def set_up_for_multi_layer_perceptron():
     all_parameters = mlp.get_params()
     all_scorers = get_scorer_names()
     scorers = ['accuracy', 'recall_micro', 'precision_micro', 'f1_micro', 'roc_auc_ovr']
-    parameter_dict = {'hidden_layer_sizes': [(10,), (50,), (100,), (200,), (500,),
-                                             (10, 6), (50, 6), (100, 6), (200, 6), (500, 6),
-                                             (10, 21), (50, 21), (100, 21), (200, 21), (500, 21),
-                                             (10, 50), (50, 50), (100, 50), (200, 50), (500, 50),
-                                             (10, 100), (50, 100), (100, 100), (200, 100), (500, 100),
-                                             (10, 100, 6), (50, 100, 6), (100, 100, 6), (200, 100, 6),
-                                             (10, 100, 21), (50, 100, 21), (100, 100, 21), (200, 100, 21)],
-                      'activation': ["identity", "logistic", "tanh", "relu"],
-                      'solver': ["lbfgs", "sgd", "adam"],
-                      'alpha': [0.00001, 0.0001, 0.0005, 0.001],
+    parameter_dict = {'hidden_layer_sizes': [(50,), (100,), (200,), (500,), (1000,)],
+                      'alpha': [0.0001, 0.0005, 0.001],
                       'learning_rate': ["constant", "invscaling", "adaptive"],
-                      'learning_rate_init': [0.0001, 0.0005, 0.001, 0.005, 0.01],
-                      'max_iter': [100, 200, 500, 1000],
-                      'shuffle': [True, False],
-                      'tol': [0.00001, 0.00005, 0.0001, 0.0005, 0.001],
-                      'momentum': [0.7, 0.8, 0.9]
+                      'learning_rate_init': [0.0005, 0.001, 0.005, 0.01],
+                      'max_iter': [1000, 5000, 10000]
                       }
-    print("break")
+    return mlp, scorers, parameter_dict
 
 
 def run_grid_search(dataset, classifier, parameters, scorers):
+    tock = time.time()
     data, target = split_to_data_and_target(dataset)
     grid_searcher = GridSearchCV(estimator=classifier, param_grid=parameters, scoring=scorers, refit='accuracy')
     grid_searcher.fit(data, target)
+    tick = time.time()
+    elapsed_time = tick - tock
+    elapsed_seconds = int(elapsed_time % 60)
+    elapsed_minutes = int((elapsed_time % 3600)/60)
+    elapsed_hours = int(elapsed_time / 3600)
+    print("The total elapsed time for this run was {} hours {} minutes and {} seconds"
+          .format(elapsed_hours, elapsed_minutes, elapsed_seconds))
     return grid_searcher
