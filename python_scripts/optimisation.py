@@ -2,11 +2,13 @@ import pandas as pd
 import numpy as np
 import math
 import time
+import datetime
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import get_scorer_names, accuracy_score, recall_score, precision_score, \
     precision_recall_curve, roc_auc_score, f1_score
 from classification import *
+from logger import *
 
 
 def set_up_for_decision_tree():
@@ -65,6 +67,7 @@ def set_up_for_multi_layer_perceptron():
 
 
 def run_grid_search(dataset, classifier, parameters, scorers):
+    log_this = custom_logger("grid search log")
     tock = time.time()
     data, target = split_to_data_and_target(dataset)
     grid_searcher = GridSearchCV(estimator=classifier, param_grid=parameters, scoring=scorers, refit='accuracy')
@@ -72,8 +75,8 @@ def run_grid_search(dataset, classifier, parameters, scorers):
     tick = time.time()
     elapsed_time = tick - tock
     elapsed_seconds = int(elapsed_time % 60)
-    elapsed_minutes = int((elapsed_time % 3600)/60)
+    elapsed_minutes = int((elapsed_time % 3600) / 60)
     elapsed_hours = int(elapsed_time / 3600)
-    print("The total elapsed time for this run was {} hours {} minutes and {} seconds"
-          .format(elapsed_hours, elapsed_minutes, elapsed_seconds))
+    log_this.info("The total elapsed time for running all datasets was {} hours {} minutes and {} seconds"
+                  .format(elapsed_hours, elapsed_minutes, elapsed_seconds))
     return grid_searcher

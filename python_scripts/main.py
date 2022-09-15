@@ -4,9 +4,11 @@ from dataset_manipulation import *
 from classification import *
 from optimisation import *
 import time
+from logger import *
 
 
 def run_fun():
+    log_this = custom_logger('log man')
     dfs = get_all_csvs_from_folder("data/complete_datasets")
     # create_channel_sorted_csvs(dfs)
     # flat_run(dfs)
@@ -62,9 +64,8 @@ def run_fun():
     elapsed_seconds = int(elapsed_time % 60)
     elapsed_minutes = int((elapsed_time % 3600)/60)
     elapsed_hours = int(elapsed_time / 3600)
-    print("The total elapsed time for running all datasets was {} hours {} minutes and {} seconds"
-          .format(elapsed_hours, elapsed_minutes, elapsed_seconds))
-    print("break")
+    log_this.info("The total elapsed time for running all datasets was {} hours {} minutes and {} seconds"
+                  .format(elapsed_hours, elapsed_minutes, elapsed_seconds))
 
 
 def flat_run(data_frames):
