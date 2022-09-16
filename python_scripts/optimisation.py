@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import math
-import time
+from time import time
 import datetime
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
@@ -9,6 +9,8 @@ from sklearn.metrics import get_scorer_names, accuracy_score, recall_score, prec
     precision_recall_curve, roc_auc_score, f1_score
 from classification import *
 from logger import *
+
+log_this = custom_logger("grid search log")
 
 
 def set_up_for_decision_tree():
@@ -43,7 +45,7 @@ def set_up_for_support_vector_machine():
     all_scorers = get_scorer_names()
     scorers = ['accuracy', 'recall_micro', 'precision_micro', 'f1_micro', 'roc_auc_ovr']
     parameter_dict = {'C': [0.5, 0.8, 1.0, 1.2, 1.5],
-                      'kernel': ["linear", "poly", "rbf", "sigmoid"],
+                      'kernel': ["poly", "rbf", "sigmoid"],
                       'degree': [2, 3, 4, 5],
                       'gamma': ["scale", "auto"],
                       'tol': [0.01, 0.001, 0.0001],
@@ -67,12 +69,16 @@ def set_up_for_multi_layer_perceptron():
 
 
 def run_grid_search(dataset, classifier, parameters, scorers):
-    log_this = custom_logger("grid search log")
-    tock = time.time()
+    tock = time()
     data, target = split_to_data_and_target(dataset)
-    grid_searcher = GridSearchCV(estimator=classifier, param_grid=parameters, scoring=scorers, refit='accuracy')
+    grid_searcher = GridSearchCV(estimator=classifier,
+                                 param_grid=parameters,
+                                 scoring=scorers,
+                                 refit='accuracy',
+                                 n_jobs=2,
+                                 verbose=1)
     grid_searcher.fit(data, target)
-    tick = time.time()
+    tick = time()
     elapsed_time = tick - tock
     elapsed_seconds = int(elapsed_time % 60)
     elapsed_minutes = int((elapsed_time % 3600) / 60)

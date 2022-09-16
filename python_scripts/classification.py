@@ -1,13 +1,14 @@
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split
+from logger import *
+from sklearn.model_selection import train_test_split, cross_validate
 from sklearn.naive_bayes import GaussianNB
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from sklearn.neural_network import MLPClassifier
-from sklearn.metrics import accuracy_score, recall_score, precision_score, \
-    precision_recall_curve, roc_auc_score, f1_score
+
+log_this = custom_logger("classification log")
 
 
 def split_to_data_and_target(data_frame):
@@ -52,20 +53,72 @@ def flat_run_all_classifiers(dataset, dataset_name):
 
     nb.fit(X_train, y_train)
     score = nb.score(X_test, y_test)
-    print("Naive Bayes classifier accuracy on {} dataset: {}".format(dataset_name, score))
+    log_this.info("Naive Bayes classifier accuracy on {} dataset: {}".format(dataset_name, score))
 
     dt.fit(X_train, y_train)
     score = dt.score(X_test, y_test)
-    print("Decision tree classifier accuracy on {} dataset: {}".format(dataset_name, score))
+    log_this.info("Decision tree classifier accuracy on {} dataset: {}".format(dataset_name, score))
 
     rf.fit(X_train, y_train)
     score = rf.score(X_test, y_test)
-    print("Random forest classifier accuracy on {} dataset: {}".format(dataset_name, score))
+    log_this.info("Random forest classifier accuracy on {} dataset: {}".format(dataset_name, score))
 
     svm.fit(X_train, y_train)
     score = svm.score(X_test, y_test)
-    print("Support vector machine classifier accuracy on {} dataset: {}".format(dataset_name, score))
+    log_this.info("Support vector machine classifier accuracy on {} dataset: {}".format(dataset_name, score))
 
     mlp.fit(X_train, y_train)
     score = mlp.score(X_test, y_test)
-    print("Multi-layer perceptron classifier accuracy on {} dataset: {}".format(dataset_name, score))
+    log_this.info("Multi-layer perceptron classifier accuracy on {} dataset: {}".format(dataset_name, score))
+
+
+def run_optimised_classifiers(dataset, dataset_name):
+    X, y = split_to_data_and_target(dataset)
+    nb = naive_bayes()
+    dt = decision_tree()
+    rf = random_forest()
+    svm = support_vector_machine()
+    mlp = multi_layer_perceptron()
+
+    log_this.info("Running Naive Bayes cross validation on {} dataset".format(dataset_name))
+    nb_cv_results = cross_validate(nb, X, y, cv=5,
+                                   scoring=['accuracy',
+                                            'recall_micro',
+                                            'precision_micro',
+                                            'f1_micro',
+                                            'roc_auc_ovr'])
+
+    log_this.info("Running Decision Tree cross validation on {} dataset".format(dataset_name))
+    dt_cv_results = cross_validate(dt, X, y, cv=5,
+                                   scoring=['accuracy',
+                                            'recall_micro',
+                                            'precision_micro',
+                                            'f1_micro',
+                                            'roc_auc_ovr'])
+
+    log_this.info("Running Random Forest cross validation on {} dataset".format(dataset_name))
+    rf_cv_results = cross_validate(rf, X, y, cv=5,
+                                   scoring=['accuracy',
+                                            'recall_micro',
+                                            'precision_micro',
+                                            'f1_micro',
+                                            'roc_auc_ovr'])
+
+    log_this.info("Running Support Vector Machine cross validation on {} dataset".format(dataset_name))
+    svm_cv_results = cross_validate(svm, X, y, cv=5,
+                                    scoring=['accuracy',
+                                             'recall_micro',
+                                             'precision_micro',
+                                             'f1_micro',
+                                             'roc_auc_ovr'])
+
+    log_this.info("Running Multi-layer Perceptron cross validation on {} dataset".format(dataset_name))
+    mlp_cv_results = cross_validate(mlp, X, y, cv=5,
+                                    scoring=['accuracy',
+                                             'recall_micro',
+                                             'precision_micro',
+                                             'f1_micro',
+                                             'roc_auc_ovr'])
+
+    all_results = [nb_cv_results, dt_cv_results, rf_cv_results, svm_cv_results, mlp_cv_results]
+    return all_results

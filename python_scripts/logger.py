@@ -4,7 +4,7 @@ import sys
 
 def custom_logger(name):
     formatter = lg.Formatter(fmt='%(asctime)s %(levelname)-8s %(message)s',
-                                  datefmt='%d-%m-%Y %H:%M:%S')
+                             datefmt='%d-%m-%Y %H:%M:%S')
     handler = lg.FileHandler('log.txt', mode='w')
     handler.setFormatter(formatter)
     screen_handler = lg.StreamHandler(stream=sys.stdout)
@@ -14,4 +14,3 @@ def custom_logger(name):
     logger.addHandler(handler)
     logger.addHandler(screen_handler)
     return logger
-

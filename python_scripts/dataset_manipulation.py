@@ -2,16 +2,18 @@ import pandas as pd
 import numpy as np
 import os
 import itertools
+from logger import *
+log_this = custom_logger("dataset man log")
 
 
 def get_all_csvs_from_folder(given_folder):
     num_files = len(os.listdir(given_folder))
-    print("Folder contains {} files, beginning extraction...".format(num_files))
+    log_this.info("Folder contains {} files, beginning extraction...".format(num_files))
     data_frames = []
     for file in os.listdir(given_folder):
         location = given_folder + "/" + file
         data_frames.append(pd.read_csv(location))
-    print("All files added to list of data frames...")
+    log_this.info("All files added to list of data frames...")
     return data_frames
 
 
@@ -21,13 +23,13 @@ def create_channel_sorted_csvs(data_frames):
     for i in range(1, len(channels)):
         for combination in itertools.combinations(channels, i):
             all_combinations.append(combination)
-    print("All possible unique combinations of channels are as follows:\n {}".format(all_combinations))
+    log_this.info("All possible unique combinations of channels are as follows:\n {}".format(all_combinations))
 
     which_folder = 0
-    print("beginning loop through data frames")
+    log_this.info("beginning loop through data frames")
     for df in data_frames:
         folder_list = os.listdir("data/channel_analysis_datasets")
-        print("working on folder {}".format(folder_list[which_folder]))
+        log_this.info("working on folder {}".format(folder_list[which_folder]))
         for channel_set in all_combinations:
             save_location = "data/channel_analysis_datasets/" + folder_list[which_folder] + "/" + \
                             folder_list[which_folder][3:] + "_"
@@ -40,5 +42,5 @@ def create_channel_sorted_csvs(data_frames):
             reduced_df = df[column_list]
             save_location += ".csv"
             reduced_df.to_csv(save_location, index=False)
-            print("file saved in location: {}".format(save_location))
+            log_this.info("file saved in location: {}".format(save_location))
         which_folder += 1
