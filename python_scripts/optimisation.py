@@ -1,17 +1,25 @@
 import pandas as pd
 import numpy as np
 import math
+import pickle
 from time import time
 import datetime
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import get_scorer_names, accuracy_score, recall_score, precision_score, \
     precision_recall_curve, roc_auc_score, f1_score
+from warnings import simplefilter
 from classification import *
 from logger import *
 
 log_this = custom_logger("grid search log")
 
+
+def load_pickle_files(filepath):
+    with open(filepath, 'rb') as f:
+        result = pickle.load(f)
+        f.close()
+    return result
 
 def set_up_for_decision_tree():
     dt = decision_tree()
@@ -49,7 +57,7 @@ def set_up_for_support_vector_machine():
                       'degree': [2, 3, 4, 5],
                       'gamma': ["scale", "auto"],
                       'tol': [0.01, 0.001, 0.0001],
-                      'decision_function_shape': ["ovo", "ovr"]
+                      'decision_function_shape': ["ovo", "ovr"],
                       }
     return svm, scorers, parameter_dict
 
@@ -75,8 +83,8 @@ def run_grid_search(dataset, classifier, parameters, scorers):
                                  param_grid=parameters,
                                  scoring=scorers,
                                  refit='accuracy',
-                                 n_jobs=2,
-                                 verbose=1)
+                                 n_jobs=4,
+                                 verbose=2)
     grid_searcher.fit(data, target)
     tick = time()
     elapsed_time = tick - tock
