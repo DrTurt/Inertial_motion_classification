@@ -5,6 +5,8 @@ from classification import *
 from optimisation import *
 from time import time
 from logger import *
+import tkinter as tk
+from tkinter.messagebox import showinfo
 
 log_this = custom_logger('log man')
 os.chdir("C:/Users/cirid/OneDrive/Desktop/MPhil code repo/Inertial_motion_classification")
@@ -20,6 +22,10 @@ def run_fun():
     run_parameter_optimisation(dfs, model_no=3)
 
     gs_results = load_optimisation_results("results/")
+
+
+def pop_up_please(window_title, message):
+    showinfo(window_title, message)
 
 
 def flat_run(data_frames):
@@ -58,6 +64,7 @@ def run_parameter_optimisation(dfs, model_no=0, all=False):
                 pickle.dump(dt_grid_search_results, f)
                 f.close()
             log_this.info("result saved")
+            pop_up_please("{} grid search".format(model_names[0]), "finished run on {} dataset".format(df_names[count]))
 
         if model_no == 1 or all:
             log_this.info("Running grid search for {} classifier, on {} dataset".format(model_names[1], df_names[count]))
@@ -69,6 +76,7 @@ def run_parameter_optimisation(dfs, model_no=0, all=False):
                 pickle.dump(rf_grid_search_results, f)
                 f.close()
             log_this.info("result saved")
+            pop_up_please("{} grid search".format(model_names[1]), "finished run on {} dataset".format(df_names[count]))
 
         if model_no == 2 or all:
             log_this.info("Running grid search for {} classifier, on {} dataset".format(model_names[2], df_names[count]))
@@ -80,6 +88,7 @@ def run_parameter_optimisation(dfs, model_no=0, all=False):
                 pickle.dump(svm_grid_search_results, f)
                 f.close()
             log_this.info("result saved")
+            pop_up_please("{} grid search".format(model_names[2]), "finished run on {} dataset".format(df_names[count]))
 
         if model_no == 3 or all:
             log_this.info("Running grid search for {} classifier, on {} dataset".format(model_names[3], df_names[count]))
@@ -91,6 +100,7 @@ def run_parameter_optimisation(dfs, model_no=0, all=False):
                 pickle.dump(mlp_grid_search_results, f)
                 f.close()
             log_this.info("result saved")
+            pop_up_please("{} grid search".format(model_names[3]), "finished run on {} dataset".format(df_names[count]))
 
         count += 1
 

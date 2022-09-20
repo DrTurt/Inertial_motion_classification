@@ -1,2 +1,6 @@
-18-09-2022 19:30:19 INFO     Running grid search for multi-layer perceptron classifier, on gender_recognition dataset
-dded to list of data frames...
+19-09-2022 12:41:58 INFO     The total elapsed time for running all datasets was 17 hours 11 minutes and 39 seconds
+20-09-2022 14:51:13 INFO     The total elapsed time for running all datasets was 26 hours 9 minutes and 15 seconds
+  Running grid search for multi-layer perceptron classifier, on participant_recognition dataset
+20-09-2022 14:51:13 INFO     saving result
+20-09-2022 14:51:13 INFO     result saved
+20-09-2022 14:51:13 INFO     Running grid search for multi-layer perceptron classifier, on mixed_solo_activity_recognition dataset
