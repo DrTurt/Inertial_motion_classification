@@ -58,6 +58,7 @@ def set_up_for_support_vector_machine():
                       'gamma': ["scale", "auto"],
                       'tol': [0.01, 0.001, 0.0001],
                       'decision_function_shape': ["ovo", "ovr"],
+                      'probability': [True]
                       }
     return svm, scorers, parameter_dict
 
@@ -83,7 +84,7 @@ def run_grid_search(dataset, classifier, parameters, scorers):
                                  param_grid=parameters,
                                  scoring=scorers,
                                  refit='accuracy',
-                                 n_jobs=4,
+                                 n_jobs=-2,
                                  verbose=2)
     grid_searcher.fit(data, target)
     tick = time()

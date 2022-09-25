@@ -1,6 +1,4 @@
-19-09-2022 12:41:58 INFO     The total elapsed time for running all datasets was 17 hours 11 minutes and 39 seconds
-20-09-2022 14:51:13 INFO     The total elapsed time for running all datasets was 26 hours 9 minutes and 15 seconds
-  Running grid search for multi-layer perceptron classifier, on participant_recognition dataset
-20-09-2022 14:51:13 INFO     saving result
-20-09-2022 14:51:13 INFO     result saved
-20-09-2022 14:51:13 INFO     Running grid search for multi-layer perceptron classifier, on mixed_solo_activity_recognition dataset
+25-09-2022 14:28:35 INFO     Running Naive Bayes cross validation on activity_recognition dataset
+25-09-2022 14:28:40 INFO     Running Decision Tree cross validation on activity_recognition dataset
+25-09-2022 14:28:41 INFO     Running Random Forest cross validation on activity_recognition dataset
+25-09-2022 14:29:23 INFO     Running Support Vector Machine cross validation on activity_recognition dataset
