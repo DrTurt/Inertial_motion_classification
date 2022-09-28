@@ -1,4 +1,427 @@
-25-09-2022 14:28:35 INFO     Running Naive Bayes cross validation on activity_recognition dataset
-25-09-2022 14:28:40 INFO     Running Decision Tree cross validation on activity_recognition dataset
-25-09-2022 14:28:41 INFO     Running Random Forest cross validation on activity_recognition dataset
-25-09-2022 14:29:23 INFO     Running Support Vector Machine cross validation on activity_recognition dataset
+28-09-2022 15:41:39 INFO     finished
+cross validated metrics and confusion matrix for Naive Bayes on activity_recognition_phone_acc_.csv dataset
+27-027-09-2022 19:20:16 INFO     Folder contains 14 files, beginning extraction...
+27-09-2022 19:20:17 INFO     All files added to list of data frames...
+27-09-2022 20:58:41 INFO     Folder contains 14 files, beginning extraction...
+27-09-2022 20:58:43 INFO     All files added to list of data frames...
+27-09-2022 23:43:55 INFO     Folder contains 14 files, beginning extraction...
+27-09-2022 23:43:57 INFO     All files added to list of data frames...
+28-09-2022 01:37:52 INFO     Folder contains 14 files, beginning extraction...
+28-09-2022 01:37:53 INFO     All files added to list of data frames...
+28-09-2022 02:17:50 INFO     Folder contains 14 files, beginning extraction...
+28-09-2022 02:17:52 INFO     All files added to list of data frames...
+sv dataset
+27-09-2022 17:24:13 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on activity_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 17:24:17 INFO     Computing cross validated metrics and confusion matrix for Random Forest on activity_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 17:24:43 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on activity_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 17:24:55 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on activity_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 17:31:20 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 17:31:21 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 17:31:26 INFO     Computing cross validated metrics and confusion matrix for Random Forest on activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 17:31:54 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 17:32:01 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 17:35:28 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 17:35:29 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 17:35:34 INFO     Computing cross validated metrics and confusion matrix for Random Forest on activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 17:36:04 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 17:36:14 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 17:41:58 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on activity_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 17:41:58 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on activity_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 17:42:01 INFO     Computing cross validated metrics and confusion matrix for Random Forest on activity_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 17:42:24 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on activity_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 17:42:31 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on activity_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 17:46:58 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 17:46:59 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 17:47:04 INFO     Computing cross validated metrics and confusion matrix for Random Forest on activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 17:47:35 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 17:47:44 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 17:51:22 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on activity_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 17:51:22 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on activity_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 17:51:26 INFO     Computing cross validated metrics and confusion matrix for Random Forest on activity_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 17:51:52 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on activity_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 17:52:03 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on activity_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 17:58:35 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on activity_recognition_phone_gyr_.csv dataset
+27-09-2022 17:58:36 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on activity_recognition_phone_gyr_.csv dataset
+27-09-2022 17:58:38 INFO     Computing cross validated metrics and confusion matrix for Random Forest on activity_recognition_phone_gyr_.csv dataset
+27-09-2022 17:58:59 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on activity_recognition_phone_gyr_.csv dataset
+27-09-2022 17:59:17 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on activity_recognition_phone_gyr_.csv dataset
+27-09-2022 18:08:17 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on activity_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 18:08:18 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on activity_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 18:08:22 INFO     Computing cross validated metrics and confusion matrix for Random Forest on activity_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 18:08:51 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on activity_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 18:09:05 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on activity_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 18:18:52 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 18:18:53 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 18:18:59 INFO     Computing cross validated metrics and confusion matrix for Random Forest on activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 18:19:30 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 18:19:41 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 18:29:39 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on activity_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 18:29:39 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on activity_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 18:29:43 INFO     Computing cross validated metrics and confusion matrix for Random Forest on activity_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 18:30:10 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on activity_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 18:30:26 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on activity_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 18:44:44 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on activity_recognition_watch_acc_.csv dataset
+27-09-2022 18:44:45 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on activity_recognition_watch_acc_.csv dataset
+27-09-2022 18:44:48 INFO     Computing cross validated metrics and confusion matrix for Random Forest on activity_recognition_watch_acc_.csv dataset
+27-09-2022 18:45:15 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on activity_recognition_watch_acc_.csv dataset
+27-09-2022 18:45:31 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on activity_recognition_watch_acc_.csv dataset
+27-09-2022 18:55:54 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on activity_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 18:55:55 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on activity_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 18:56:01 INFO     Computing cross validated metrics and confusion matrix for Random Forest on activity_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 18:56:40 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on activity_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 18:56:57 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on activity_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 19:10:14 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on activity_recognition_watch_gyr_.csv dataset
+27-09-2022 19:10:15 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on activity_recognition_watch_gyr_.csv dataset
+27-09-2022 19:10:18 INFO     Computing cross validated metrics and confusion matrix for Random Forest on activity_recognition_watch_gyr_.csv dataset
+27-09-2022 19:10:47 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on activity_recognition_watch_gyr_.csv dataset
+27-09-2022 19:11:04 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on activity_recognition_watch_gyr_.csv dataset
+27-09-2022 19:20:17 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_phone_acc_.csv dataset
+27-09-2022 19:20:18 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_phone_acc_.csv dataset
+27-09-2022 19:20:20 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_phone_acc_.csv dataset
+27-09-2022 19:20:36 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_phone_acc_.csv dataset
+27-09-2022 19:21:04 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_phone_acc_.csv dataset
+27-09-2022 19:25:25 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 19:25:25 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 19:25:28 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 19:25:51 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 19:26:22 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 19:32:50 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 19:32:51 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 19:32:56 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 19:33:24 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 19:33:58 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 19:39:02 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 19:39:02 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 19:39:07 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 19:39:34 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 19:40:10 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 19:47:47 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 19:47:47 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 19:47:51 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 19:48:12 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 19:48:40 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 19:53:41 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 19:53:42 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 19:53:47 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 19:54:14 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 19:54:48 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 20:00:11 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 20:00:12 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 20:00:15 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 20:00:36 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 20:01:06 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 20:07:13 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_phone_gyr_.csv dataset
+27-09-2022 20:07:13 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_phone_gyr_.csv dataset
+27-09-2022 20:07:15 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_phone_gyr_.csv dataset
+27-09-2022 20:07:33 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_phone_gyr_.csv dataset
+27-09-2022 20:08:01 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_phone_gyr_.csv dataset
+27-09-2022 20:12:50 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 20:12:50 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 20:12:54 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 20:13:17 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 20:13:48 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 20:20:31 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 20:20:32 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 20:20:37 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 20:21:04 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 20:21:41 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 20:29:02 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 20:29:03 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 20:29:06 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 20:29:28 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 20:29:59 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 20:38:42 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_watch_acc_.csv dataset
+27-09-2022 20:38:42 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_watch_acc_.csv dataset
+27-09-2022 20:38:44 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_watch_acc_.csv dataset
+27-09-2022 20:39:01 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_watch_acc_.csv dataset
+27-09-2022 20:39:27 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_watch_acc_.csv dataset
+27-09-2022 20:44:35 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 20:44:35 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 20:44:38 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 20:45:00 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 20:45:31 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 20:52:26 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on gender_recognition_watch_gyr_.csv dataset
+27-09-2022 20:52:26 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on gender_recognition_watch_gyr_.csv dataset
+27-09-2022 20:52:28 INFO     Computing cross validated metrics and confusion matrix for Random Forest on gender_recognition_watch_gyr_.csv dataset
+27-09-2022 20:52:44 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on gender_recognition_watch_gyr_.csv dataset
+27-09-2022 20:53:12 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on gender_recognition_watch_gyr_.csv dataset
+27-09-2022 20:58:43 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_phone_acc_.csv dataset
+27-09-2022 20:58:43 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_phone_acc_.csv dataset
+27-09-2022 20:58:46 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_phone_acc_.csv dataset
+27-09-2022 20:59:14 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_phone_acc_.csv dataset
+27-09-2022 20:59:41 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_phone_acc_.csv dataset
+27-09-2022 21:07:58 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 21:07:59 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 21:08:04 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 21:08:43 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 21:09:10 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 21:19:04 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 21:19:04 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 21:19:11 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 21:19:59 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 21:20:26 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+27-09-2022 21:28:36 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 21:28:37 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 21:28:45 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 21:29:35 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 21:30:03 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 21:41:48 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 21:41:48 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 21:41:53 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 21:42:30 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 21:42:56 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_phone_acc_watch_acc_.csv dataset
+27-09-2022 21:51:53 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 21:51:53 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 21:52:00 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 21:52:49 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 21:53:16 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+27-09-2022 22:02:13 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 22:02:13 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 22:02:18 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 22:02:57 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 22:03:25 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_phone_acc_watch_gyr_.csv dataset
+27-09-2022 22:13:21 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_phone_gyr_.csv dataset
+27-09-2022 22:13:22 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_phone_gyr_.csv dataset
+27-09-2022 22:13:25 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_phone_gyr_.csv dataset
+27-09-2022 22:13:58 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_phone_gyr_.csv dataset
+27-09-2022 22:14:34 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_phone_gyr_.csv dataset
+27-09-2022 22:25:19 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 22:25:20 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 22:25:25 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 22:26:04 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 22:26:35 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_phone_gyr_watch_acc_.csv dataset
+27-09-2022 22:38:20 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 22:38:21 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 22:38:28 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 22:39:18 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 22:39:50 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+27-09-2022 22:53:19 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 22:53:19 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 22:53:25 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 22:54:09 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 22:54:43 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_phone_gyr_watch_gyr_.csv dataset
+27-09-2022 23:08:02 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_watch_acc_.csv dataset
+27-09-2022 23:08:02 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_watch_acc_.csv dataset
+27-09-2022 23:08:05 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_watch_acc_.csv dataset
+27-09-2022 23:08:34 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_watch_acc_.csv dataset
+27-09-2022 23:09:05 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_watch_acc_.csv dataset
+27-09-2022 23:18:51 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 23:18:51 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 23:18:56 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 23:19:35 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 23:20:08 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_watch_acc_watch_gyr_.csv dataset
+27-09-2022 23:31:27 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on participant_recognition_watch_gyr_.csv dataset
+27-09-2022 23:31:27 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on participant_recognition_watch_gyr_.csv dataset
+27-09-2022 23:31:31 INFO     Computing cross validated metrics and confusion matrix for Random Forest on participant_recognition_watch_gyr_.csv dataset
+27-09-2022 23:32:03 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on participant_recognition_watch_gyr_.csv dataset
+27-09-2022 23:32:40 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on participant_recognition_watch_gyr_.csv dataset
+27-09-2022 23:43:57 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_phone_acc_.csv dataset
+27-09-2022 23:43:58 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_phone_acc_.csv dataset
+27-09-2022 23:44:01 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_phone_acc_.csv dataset
+27-09-2022 23:44:25 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_phone_acc_.csv dataset
+27-09-2022 23:44:36 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_phone_acc_.csv dataset
+27-09-2022 23:51:56 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 23:51:56 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 23:52:00 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 23:52:30 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+27-09-2022 23:52:41 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+28-09-2022 00:01:39 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 00:01:39 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 00:01:45 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 00:02:22 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 00:02:32 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 00:06:00 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 00:06:00 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 00:06:07 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 00:06:45 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 00:06:56 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 00:15:00 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 00:15:00 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 00:15:04 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 00:15:33 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 00:15:42 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 00:19:31 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 00:19:31 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 00:19:37 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 00:20:13 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 00:20:23 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 00:23:35 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 00:23:36 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 00:23:40 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 00:24:10 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 00:24:21 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 00:33:11 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 00:33:12 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 00:33:14 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 00:33:39 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 00:33:55 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 00:44:55 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 00:44:56 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 00:45:00 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 00:45:28 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 00:45:38 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 00:50:51 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 00:50:52 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 00:50:58 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 00:51:34 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 00:51:44 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 00:57:03 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 00:57:04 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 00:57:08 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 00:57:40 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 00:57:53 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 01:11:46 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 01:11:46 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 01:11:49 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 01:12:10 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 01:12:20 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 01:18:23 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 01:18:23 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 01:18:27 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 01:18:56 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 01:19:07 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 01:25:05 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on mixed_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 01:25:06 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on mixed_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 01:25:08 INFO     Computing cross validated metrics and confusion matrix for Random Forest on mixed_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 01:25:32 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on mixed_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 01:25:47 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on mixed_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 01:37:53 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_phone_acc_.csv dataset
+28-09-2022 01:37:54 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_phone_acc_.csv dataset
+28-09-2022 01:37:55 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_phone_acc_.csv dataset
+28-09-2022 01:38:04 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_phone_acc_.csv dataset
+28-09-2022 01:38:07 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_phone_acc_.csv dataset
+28-09-2022 01:41:27 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+28-09-2022 01:41:27 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+28-09-2022 01:41:29 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+28-09-2022 01:41:41 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+28-09-2022 01:41:43 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+28-09-2022 01:44:53 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 01:44:53 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 01:44:56 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 01:45:10 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 01:45:12 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 01:46:30 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 01:46:30 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 01:46:32 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 01:46:47 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 01:46:50 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 01:48:59 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 01:49:00 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 01:49:01 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 01:49:13 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 01:49:16 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 01:50:35 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 01:50:36 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 01:50:38 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 01:50:52 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 01:50:55 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 01:52:10 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 01:52:10 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 01:52:12 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 01:52:23 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 01:52:26 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 01:54:56 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 01:54:57 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 01:54:58 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 01:55:08 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 01:55:12 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 01:59:28 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 01:59:28 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 01:59:30 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 01:59:42 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 01:59:44 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 02:01:43 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:01:44 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:01:46 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:02:00 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:02:03 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:03:31 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:03:31 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:03:33 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:03:46 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:03:50 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:08:51 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 02:08:51 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 02:08:52 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 02:09:01 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 02:09:03 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 02:11:02 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:11:02 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:11:04 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:11:15 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:11:17 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:13:17 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on pocket_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 02:13:17 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on pocket_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 02:13:18 INFO     Computing cross validated metrics and confusion matrix for Random Forest on pocket_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 02:13:28 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on pocket_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 02:13:32 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on pocket_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 02:17:52 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_phone_acc_.csv dataset
+28-09-2022 02:17:52 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_phone_acc_.csv dataset
+28-09-2022 02:17:53 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_phone_acc_.csv dataset
+28-09-2022 02:18:04 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_phone_acc_.csv dataset
+28-09-2022 02:18:08 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_phone_acc_.csv dataset
+28-09-2022 02:21:44 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+28-09-2022 02:21:44 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+28-09-2022 02:21:46 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+28-09-2022 02:22:01 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+28-09-2022 02:22:04 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_phone_acc_phone_gyr_.csv dataset
+28-09-2022 02:25:57 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 02:25:57 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 02:26:00 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 02:26:16 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 02:26:18 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_phone_acc_phone_gyr_watch_acc_.csv dataset
+28-09-2022 02:27:15 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:27:15 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:27:18 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:27:35 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:27:38 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_phone_acc_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:29:51 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 02:29:51 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 02:29:53 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 02:30:06 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 02:30:08 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_phone_acc_watch_acc_.csv dataset
+28-09-2022 02:31:07 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:31:07 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:31:10 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:31:26 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:31:28 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_phone_acc_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:32:18 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 02:32:19 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 02:32:21 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 02:32:35 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 02:32:38 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_phone_acc_watch_gyr_.csv dataset
+28-09-2022 02:35:39 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 02:35:39 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 02:35:41 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 02:35:53 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 02:35:57 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_phone_gyr_.csv dataset
+28-09-2022 02:40:36 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 02:40:37 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 02:40:39 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 02:40:52 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 02:40:55 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_phone_gyr_watch_acc_.csv dataset
+28-09-2022 02:42:42 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:42:42 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:42:45 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:43:01 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:43:04 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_phone_gyr_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:44:17 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:44:17 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:44:19 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:44:34 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:44:38 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_phone_gyr_watch_gyr_.csv dataset
+28-09-2022 02:51:06 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 02:51:06 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 02:51:08 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 02:51:17 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 02:51:20 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_watch_acc_.csv dataset
+28-09-2022 02:53:12 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:53:13 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:53:15 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:53:29 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:53:32 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_watch_acc_watch_gyr_.csv dataset
+28-09-2022 02:55:06 INFO     Computing cross validated metrics and confusion matrix for Naive Bayes on strap_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 02:55:07 INFO     Computing cross validated metrics and confusion matrix for Decision Tree on strap_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 02:55:08 INFO     Computing cross validated metrics and confusion matrix for Random Forest on strap_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 02:55:20 INFO     Computing cross validated metrics and confusion matrix for Support Vector Machine on strap_solo_activity_recognition_watch_gyr_.csv dataset
+28-09-2022 02:55:24 INFO     Computing cross validated metrics and confusion matrix for Multi-layer Perceptron on strap_solo_activity_recognition_watch_gyr_.csv dataset

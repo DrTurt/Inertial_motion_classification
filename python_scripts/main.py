@@ -1,6 +1,10 @@
 import os
 import pickle
 import pandas as pd
+import seaborn as sns
+from matplotlib import pyplot as plt
+import matplotlib
+matplotlib.use('TkAgg')
 from dataset_manipulation import *
 from classification import *
 from optimisation import *
@@ -14,7 +18,7 @@ os.chdir("C:/Users/cirid/OneDrive/Desktop/MPhil code repo/Inertial_motion_classi
 
 
 def run_fun():
-    dfs = get_all_csvs_from_folder("data/complete_datasets")
+    # dfs = get_all_csvs_from_folder("data/complete_datasets")
 
     # create_channel_sorted_csvs(dfs)
 
@@ -22,30 +26,60 @@ def run_fun():
 
     # run_parameter_optimisation(dfs, model_no=2)
 
-    gs_results = load_optimisation_results("results/grid_search/")
+    # gs_results = load_optimisation_results("results/grid_search/")
 
-    optimal_parameters = create_optimal_param_dict()
+    # optimal_parameters = create_optimal_param_dict()
 
-    all_results = []
     df_names = ["activity_recognition",
                 "gender_recognition",
                 "participant_recognition",
                 "mixed_solo_activity_recognition",
                 "pocket_solo_activity_recognition",
                 "strap_solo_activity_recognition"]
-    count = 0
-    for data_frame in dfs:
-        this_dataset_results = run_optimised_classifiers(data_frame, df_names[count], optimal_parameters)
-        all_results.append(this_dataset_results)
-        count += 1
-    optimised_results = {'naive_bayes': all_results[0], 'decision_tree': all_results[1],
-                         'random_forest': all_results[2], 'support_vector_machine': all_results[3],
-                         'multi_layer_perceptron': all_results[4]}
+
+    all_results = {}
+
+    # select_num = 0
+    # which_df = df_names[select_num]
+    # data_frame = dfs[select_num]
+    # activity_recognition_results = run_optimised_classifiers(data_frame, which_df)
+    # all_results[which_df] = activity_recognition_results
+    # # print_confusion_matrices(all_results[which_df])
+    # save_metrics_as_csv(all_results[which_df], which_df)
+
+    # count = 0
+    # for data_frame in dfs:
+    #     this_dataset_results = run_optimised_classifiers(data_frame, df_names[count], optimal_parameters)
+    #     all_results[df_names[count]] = this_dataset_results
+    #     count += 1
 
     # save_cv_results(gs_results)
 
-    log_this.info("finished")
+    file_names = ""
+    parent_location = "results/channel_analysis/"
+    count_dataset = 0
+    channel_folders = os.listdir("data/channel_analysis_datasets")
+    for folder in channel_folders:
+        file_names = os.listdir("data/channel_analysis_datasets/{}".format(folder))
+        dfs = get_all_csvs_from_folder("data/channel_analysis_datasets/{}".format(folder))
+        count_file = 0
+        for data_frame in dfs:
+            this_dataset_results = run_optimised_classifiers(data_frame, file_names[count_file])
+            file_name = file_names[count_file]
+            for classifier in this_dataset_results:
+                if classifier == "class_labels":
+                    continue
+                save_location = parent_location + df_names[count_dataset] + "/" + classifier + "_metrics_" + file_name
+                metric_panda = pd.DataFrame.from_dict(this_dataset_results[classifier]["metrics"])
+                metric_panda.to_csv(save_location, index=False)
+                save_location = parent_location + df_names[count_dataset] + "/" + classifier + "_confusion_matrix_" + file_name
+                confusion_matrix_panda = pd.DataFrame(this_dataset_results[classifier]["confusion matrix"])
+                confusion_matrix_panda.to_csv(save_location, index=False)
 
+            count_file += 1
+        count_dataset += 1
+
+    log_this.info("finished")
 
 
 def pop_up_please(window_title, message):
@@ -78,7 +112,8 @@ def run_parameter_optimisation(dfs, model_no=0, all=False):
     tock = time()
     for data_frame in dfs:
         if model_no == 0 or all:
-            log_this.info("Running grid search for {} classifier, on {} dataset".format(model_names[0], df_names[count]))
+            log_this.info(
+                "Running grid search for {} classifier, on {} dataset".format(model_names[0], df_names[count]))
             dt, scorer_list, parameter_dict = set_up_for_decision_tree()
             dt_grid_search_results = run_grid_search(data_frame, dt, parameter_dict, scorer_list)
             save_location = "results/grid_search/decision_tree/decision_tree_" + df_names[count] + ".pickle"
@@ -90,7 +125,8 @@ def run_parameter_optimisation(dfs, model_no=0, all=False):
             # pop_up_please("{} grid search".format(model_names[0]), "finished run on {} dataset".format(df_names[count]))
 
         if model_no == 1 or all:
-            log_this.info("Running grid search for {} classifier, on {} dataset".format(model_names[1], df_names[count]))
+            log_this.info(
+                "Running grid search for {} classifier, on {} dataset".format(model_names[1], df_names[count]))
             rf, scorer_list, parameter_dict = set_up_for_random_forest()
             rf_grid_search_results = run_grid_search(data_frame, rf, parameter_dict, scorer_list)
             save_location = "results/grid_search/random_forest/random_forest_" + df_names[count] + ".pickle"
@@ -102,10 +138,12 @@ def run_parameter_optimisation(dfs, model_no=0, all=False):
             # pop_up_please("{} grid search".format(model_names[1]), "finished run on {} dataset".format(df_names[count]))
 
         if model_no == 2 or all:
-            log_this.info("Running grid search for {} classifier, on {} dataset".format(model_names[2], df_names[count]))
+            log_this.info(
+                "Running grid search for {} classifier, on {} dataset".format(model_names[2], df_names[count]))
             svm, scorer_list, parameter_dict = set_up_for_support_vector_machine()
             svm_grid_search_results = run_grid_search(data_frame, svm, parameter_dict, scorer_list)
-            save_location = "results/grid_search/support_vector_machine/support_vector_machine_" + df_names[count] + ".pickle"
+            save_location = "results/grid_search/support_vector_machine/support_vector_machine_" + df_names[
+                count] + ".pickle"
             log_this.info("saving result")
             with open(save_location, 'wb') as f:
                 pickle.dump(svm_grid_search_results, f)
@@ -114,10 +152,12 @@ def run_parameter_optimisation(dfs, model_no=0, all=False):
             # pop_up_please("{} grid search".format(model_names[2]), "finished run on {} dataset".format(df_names[count]))
 
         if model_no == 3 or all:
-            log_this.info("Running grid search for {} classifier, on {} dataset".format(model_names[3], df_names[count]))
+            log_this.info(
+                "Running grid search for {} classifier, on {} dataset".format(model_names[3], df_names[count]))
             mlp, scorer_list, parameter_dict = set_up_for_multi_layer_perceptron()
             mlp_grid_search_results = run_grid_search(data_frame, mlp, parameter_dict, scorer_list)
-            save_location = "results/grid_search/multi_layer_perceptron/multi_layer_perceptron_" + df_names[count] + ".pickle"
+            save_location = "results/grid_search/multi_layer_perceptron/multi_layer_perceptron_" + df_names[
+                count] + ".pickle"
             log_this.info("saving result")
             with open(save_location, 'wb') as f:
                 pickle.dump(mlp_grid_search_results, f)
@@ -243,22 +283,27 @@ def create_optimal_param_dict():
                             if model == "decision_tree":
                                 temp_dict[key_name]["ccp_alpha"] = sorted_df["param_ccp_alpha"].iloc[0]
                                 temp_dict[key_name]["criterion"] = sorted_df["param_criterion"].iloc[0]
-                                temp_dict[key_name]["min_impurity_decrease"] = sorted_df["param_min_impurity_decrease"].iloc[0]
+                                temp_dict[key_name]["min_impurity_decrease"] = \
+                                sorted_df["param_min_impurity_decrease"].iloc[0]
                                 temp_dict[key_name]["splitter"] = sorted_df["param_splitter"].iloc[0]
                             if model == "multi_layer_perceptron":
                                 temp_dict[key_name]["alpha"] = sorted_df["param_alpha"].iloc[0]
-                                temp_dict[key_name]["hidden_layer_sizes"] = sorted_df["param_hidden_layer_sizes"].iloc[0]
+                                temp_dict[key_name]["hidden_layer_sizes"] = sorted_df["param_hidden_layer_sizes"].iloc[
+                                    0]
                                 temp_dict[key_name]["learning_rate"] = sorted_df["param_learning_rate"].iloc[0]
-                                temp_dict[key_name]["learning_rate_init"] = sorted_df["param_learning_rate_init"].iloc[0]
+                                temp_dict[key_name]["learning_rate_init"] = sorted_df["param_learning_rate_init"].iloc[
+                                    0]
                                 temp_dict[key_name]["max_iter"] = sorted_df["param_max_iter"].iloc[0]
                             if model == "random_forest":
                                 temp_dict[key_name]["ccp_alpha"] = sorted_df["param_ccp_alpha"].iloc[0]
                                 temp_dict[key_name]["criterion"] = sorted_df["param_criterion"].iloc[0]
-                                temp_dict[key_name]["min_impurity_decrease"] = sorted_df["param_min_impurity_decrease"].iloc[0]
+                                temp_dict[key_name]["min_impurity_decrease"] = \
+                                sorted_df["param_min_impurity_decrease"].iloc[0]
                                 temp_dict[key_name]["n_estimators"] = sorted_df["param_n_estimators"].iloc[0]
                             if model == "support_vector_machine":
                                 temp_dict[key_name]["C"] = sorted_df["param_C"].iloc[0]
-                                temp_dict[key_name]["decision_function_shape"] = sorted_df["param_decision_function_shape"].iloc[0]
+                                temp_dict[key_name]["decision_function_shape"] = \
+                                sorted_df["param_decision_function_shape"].iloc[0]
                                 temp_dict[key_name]["degree"] = sorted_df["param_degree"].iloc[0]
                                 temp_dict[key_name]["gamma"] = sorted_df["param_gamma"].iloc[0]
                                 temp_dict[key_name]["kernel"] = sorted_df["param_kernel"].iloc[0]
@@ -266,6 +311,27 @@ def create_optimal_param_dict():
                                 temp_dict[key_name]["tol"] = sorted_df["param_tol"].iloc[0]
                             continue
     return temp_dict
+
+
+def print_confusion_matrices(dictionary_results):
+    for model in dictionary_results:
+        if model == "class_labels":
+            break
+        cf_list = dictionary_results[model]["confusion matrix"]
+        sns.heatmap(cf_list, annot=True, cmap='BuGn', fmt='g',
+                    xticklabels=dictionary_results["class_labels"],
+                    yticklabels=dictionary_results["class_labels"],)
+        plt.show()
+
+
+def save_metrics_as_csv(dictionary_results, this_df_name):
+    for model in dictionary_results:
+        if model == "class_labels":
+            break
+        metric_dict = dictionary_results[model]["metrics"]
+        csv_file = pd.DataFrame.from_dict(metric_dict)
+        save_location = "results/cross_val_results/metrics/" + this_df_name + "/" + model + "_" + this_df_name + "_metrics.csv"
+        csv_file.to_csv(save_location)
 
 
 if __name__ == '__main__':
